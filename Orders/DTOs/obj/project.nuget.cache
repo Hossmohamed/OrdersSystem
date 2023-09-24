@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "TSEQlto24a2BoQBG+/Gq/ZLPbdMRIhDcd5AWwWp5W8L1CUQ73Oq4XEgxihbdKY6oZe9cInaEL8bCzh2dk2WWIw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hossam Mohamed\\Desktop\\EEG-InterShip\\Orders\\DTOs\\DTOs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
