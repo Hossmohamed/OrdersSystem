@@ -18,3 +18,13 @@ C:\Users\Hossam Mohamed\Desktop\EEG-InterShip\Orders\order\DTOs\obj\Debug\netsta
 C:\Users\Hossam Mohamed\Desktop\EEG-InterShip\Orders\order\DTOs\obj\Debug\netstandard2.0\DTOs.csproj.CoreCompileInputs.cache
 C:\Users\Hossam Mohamed\Desktop\EEG-InterShip\Orders\order\DTOs\obj\Debug\netstandard2.0\DTOs.dll
 C:\Users\Hossam Mohamed\Desktop\EEG-InterShip\Orders\order\DTOs\obj\Debug\netstandard2.0\DTOs.pdb
+C:\Users\Hossam Mohamed\Documents\GitHub\OrdersSystem\Orders\DTOs\bin\Debug\netstandard2.0\DTOs.deps.json
+C:\Users\Hossam Mohamed\Documents\GitHub\OrdersSystem\Orders\DTOs\bin\Debug\netstandard2.0\DTOs.dll
+C:\Users\Hossam Mohamed\Documents\GitHub\OrdersSystem\Orders\DTOs\bin\Debug\netstandard2.0\DTOs.pdb
+C:\Users\Hossam Mohamed\Documents\GitHub\OrdersSystem\Orders\DTOs\obj\Debug\netstandard2.0\DTOs.csproj.AssemblyReference.cache
+C:\Users\Hossam Mohamed\Documents\GitHub\OrdersSystem\Orders\DTOs\obj\Debug\netstandard2.0\DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hossam Mohamed\Documents\GitHub\OrdersSystem\Orders\DTOs\obj\Debug\netstandard2.0\DTOs.AssemblyInfoInputs.cache
+C:\Users\Hossam Mohamed\Documents\GitHub\OrdersSystem\Orders\DTOs\obj\Debug\netstandard2.0\DTOs.AssemblyInfo.cs
+C:\Users\Hossam Mohamed\Documents\GitHub\OrdersSystem\Orders\DTOs\obj\Debug\netstandard2.0\DTOs.csproj.CoreCompileInputs.cache
+C:\Users\Hossam Mohamed\Documents\GitHub\OrdersSystem\Orders\DTOs\obj\Debug\netstandard2.0\DTOs.dll
+C:\Users\Hossam Mohamed\Documents\GitHub\OrdersSystem\Orders\DTOs\obj\Debug\netstandard2.0\DTOs.pdb

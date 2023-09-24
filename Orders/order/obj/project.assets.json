@@ -3342,11 +3342,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hossam Mohamed\\Desktop\\EEG-InterShip\\Orders\\order\\order.csproj",
+      "projectUniqueName": "C:\\Users\\Hossam Mohamed\\Documents\\GitHub\\OrdersSystem\\Orders\\order\\order.csproj",
       "projectName": "order",
-      "projectPath": "C:\\Users\\Hossam Mohamed\\Desktop\\EEG-InterShip\\Orders\\order\\order.csproj",
+      "projectPath": "C:\\Users\\Hossam Mohamed\\Documents\\GitHub\\OrdersSystem\\Orders\\order\\order.csproj",
       "packagesPath": "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hossam Mohamed\\Desktop\\EEG-InterShip\\Orders\\order\\obj\\",
+      "outputPath": "C:\\Users\\Hossam Mohamed\\Documents\\GitHub\\OrdersSystem\\Orders\\order\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3369,8 +3369,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Hossam Mohamed\\Desktop\\EEG-InterShip\\Orders\\DTOs\\DTOs.csproj": {
-              "projectPath": "C:\\Users\\Hossam Mohamed\\Desktop\\EEG-InterShip\\Orders\\DTOs\\DTOs.csproj"
+            "C:\\Users\\Hossam Mohamed\\Documents\\GitHub\\OrdersSystem\\Orders\\DTOs\\DTOs.csproj": {
+              "projectPath": "C:\\Users\\Hossam Mohamed\\Documents\\GitHub\\OrdersSystem\\Orders\\DTOs\\DTOs.csproj"
             }
           }
         }
