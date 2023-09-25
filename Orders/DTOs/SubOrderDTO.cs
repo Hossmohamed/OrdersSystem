@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace OrderUpdate.DTO
 {
@@ -17,7 +19,7 @@ namespace OrderUpdate.DTO
 
         [DisplayName("Executed Qantity")]
         public int ExecutedQuantity { get; set; }
-
+      
         public int OrderId { get; set; }
     }
 }

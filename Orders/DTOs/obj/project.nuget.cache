@@ -1,11 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "n1wk6eZl5qp5Q1i1NXuBjGzVz1vtyEs2xVzgjNqo6dEXdH8N1d/k3bdFbzEmajV9XR8pOcL2afxb4x7Bn5cpEA==",
+  "dgSpecHash": "S6LCskzm8MAgKaIYXgivC6BmpdAddY76ImCwLBmpFl+zColLChlGsF1zIWAXctAkVwZDzW8gLTqwl/C8T55Okg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hossam Mohamed\\Documents\\GitHub\\OrdersSystem\\Orders\\DTOs\\DTOs.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\Hossam Mohamed\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,4 +1,5 @@
-﻿using OrderUpdate.DTO;
+﻿using AutoMapper;
+using OrderUpdate.DTO;
 using OrderUpdate.Models;
 
 namespace OrderUpdate.Manager
@@ -6,10 +7,12 @@ namespace OrderUpdate.Manager
     public class SubOrderManager : IsubOrder
     {
         Context context;
+        IMapper mapper;
 
-        public SubOrderManager(Context _context)
+        public SubOrderManager(Context _context,IMapper _mapper)
         {
             context = _context;
+            mapper = _mapper;
         }
 
         public SubOrders Add(SubOrderDTO order)
@@ -38,19 +41,22 @@ namespace OrderUpdate.Manager
         public List<SubOrderDTO> getall()
         {
             var suborder = context.SubOrders.ToList();
-            List<SubOrderDTO> subOrderDtos = new List<SubOrderDTO>();
-            foreach (var item in suborder)
-            {
-                SubOrderDTO subOrderDto = new SubOrderDTO();
-                subOrderDto.SuborderId = item.SuborderID;
-                subOrderDto.OrderId = item.OrderID;
-                subOrderDto.suborderQuantity = item.SuborderQuantity;
-                subOrderDto.subordertype = item.Subordertype;
+            var result=mapper.Map<List<SubOrderDTO>>(suborder);
+            #region MyRegion
+            //List<SubOrderDTO> subOrderDtos = new List<SubOrderDTO>();
+            //foreach (var item in suborder)
+            //{
+            //    SubOrderDTO subOrderDto = new SubOrderDTO();
+            //    subOrderDto.SuborderId = item.SuborderID;
+            //    subOrderDto.OrderId = item.OrderID;
+            //    subOrderDto.suborderQuantity = item.SuborderQuantity;
+            //    subOrderDto.subordertype = item.Subordertype;
 
-                subOrderDtos.Add(subOrderDto);
+            //    subOrderDtos.Add(subOrderDto);
 
-            }
-            return subOrderDtos;
+            //} 
+            #endregion
+            return result;
         }
     }
 }

@@ -27,27 +27,27 @@ namespace orders.Controllers
         }
 
         [HttpGet("all")]
-        public ActionResult<List<OrderDTO>> getAll() 
+        public ActionResult<List<OrderDTO>> getAll()
         {
-            return iorder.getall(); 
+            return iorder.getall();
         }
 
 
 
 
         [HttpPost("add")]
-        public ActionResult add(OrderDTO orders) 
+        public ActionResult add(OrderDTO orders)
         {
-        
-             var or=   iorder.Add(orders);
-            return Created("url",or);
+
+            var or = iorder.Add(orders);
+            return Created("url", or);
 
         }
 
 
 
 
-        [HttpGet("allsuborder")] 
+        [HttpGet("allsuborder")]
         public ActionResult<List<SubOrderDTO>> getAllsuborder()
         {
             return suborder.getall();
@@ -60,7 +60,7 @@ namespace orders.Controllers
         public ActionResult addsuborder(SubOrderDTO suborders)
         {
 
-           var sub= suborder.Add(suborders);
+            var sub = suborder.Add(suborders);
 
             return Created("url", sub);
 
@@ -84,68 +84,68 @@ namespace orders.Controllers
         //    return Ok(orderViewModels);
         //}
         [HttpGet("byids")]
-      
-            public ActionResult<List<OrderDTO>> OrganizeData([FromQuery] List<int> orderIds)
-            {
-                var orders = iorder.getall()
-                    .Where(order => orderIds.Contains(order.OrderId))
-                    .ToList();
 
-                var suborders = suborder.getall()
-                    .Where(suborder => orderIds.Contains(suborder.OrderId))
-                    .ToList();
+        public ActionResult<List<OrderDTO>> OrganizeData([FromQuery] List<int> orderIds)
+        {
+            var orders = iorder.getall()
+                .Where(order => orderIds.Contains(order.OrderID))
+                .ToList();
 
-                //var orderViewModels = orders.Select(order => new OrderViewModel
-                //{
-                //    Orders = orders.ToList(), 
-                //    SubOrders = suborders.Where(suborder => suborder.OrderId == order.OrderId).ToList()
-                //}).ToList();
+            var suborders = suborder.getall()
+                .Where(suborder => orderIds.Contains(suborder.OrderId))
+                .ToList();
 
-                return orders;
+            //var orderViewModels = orders.Select(order => new OrderViewModel
+            //{
+            //    Orders = orders.ToList(), 
+            //    SubOrders = suborders.Where(suborder => suborder.OrderId == order.OrderId).ToList()
+            //}).ToList();
+
+            return orders;
             }
-        
-
-
-        //[HttpGet("getViewModel")]
-        //public ActionResult<List<OrderViewModel>> GetViewModel([FromQuery] List<int> orderIDs)
-        //{
-        //    if (orderIDs == null || !orderIDs.Any())
-        //    {
-
-        //        return BadRequest("No orderIDs provided.");
-        //    }
-
-
-        //    var orderViewModels = con.OrderViewModels
-        //     .Where(o => orderIDs.Contains(o.OrderViewModelID)) // Assuming OrderViewModelID matches orderIDs
-        //     .ToList();
-
-
-        //    return orderViewModels;
-        //}
 
 
 
-        //[HttpPost]
-        //public ActionResult Add(Orders order) 
-        //{
+            //[HttpGet("getViewModel")]
+            //public ActionResult<List<OrderViewModel>> GetViewModel([FromQuery] List<int> orderIDs)
+            //{
+            //    if (orderIDs == null || !orderIDs.Any())
+            //    {
 
-        // if(ModelState.IsValid) 
-        //    {
-        //        try
-        //        {
-        //            con.Orders.Add(order);
-        //            con.SaveChanges();
-        //            return Ok(order);
-        //        }
-        //        catch (Exception ex) 
-        //        {
-        //          return BadRequest(ex.Message);
-        //        }
-        //    }
-        //        return BadRequest();
+            //        return BadRequest("No orderIDs provided.");
+            //    }
 
 
-        //}
-    }
+            //    var orderViewModels = con.OrderViewModels
+            //     .Where(o => orderIDs.Contains(o.OrderViewModelID)) // Assuming OrderViewModelID matches orderIDs
+            //     .ToList();
+
+
+            //    return orderViewModels;
+            //}
+
+
+
+            //[HttpPost]
+            //public ActionResult Add(Orders order) 
+            //{
+
+            // if(ModelState.IsValid) 
+            //    {
+            //        try
+            //        {
+            //            con.Orders.Add(order);
+            //            con.SaveChanges();
+            //            return Ok(order);
+            //        }
+            //        catch (Exception ex) 
+            //        {
+            //          return BadRequest(ex.Message);
+            //        }
+            //    }
+            //        return BadRequest();
+
+
+            //}
+        } 
 }

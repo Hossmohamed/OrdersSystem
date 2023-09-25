@@ -8,7 +8,7 @@ namespace OrderUpdate.DTO
     public class OrderDTO
     {
         [DisplayName("Order ID")]
-        public int OrderId { get; set; }
+        public int OrderID { get; set; }
 
         [DisplayName("Order Type")]
         public string Ordertype { get; set; }
