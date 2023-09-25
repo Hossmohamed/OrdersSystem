@@ -15,27 +15,25 @@ namespace OrderUpdate.Manager
             mapper = _mapper;
         }
 
-        public SubOrders Add(SubOrderDTO order)
+        public SubOrders Add(SubOrderDTO suborder)
         {
-            var subOrder = new SubOrders();
+            //var subOrder = new SubOrders();
 
-            //order.SuborderId = subOrder.SuborderID;
-            //order.OrderId = subOrder.OrderID;
-            //order.suborderQuantity = subOrder.SuborderQuantity;
-            //order.subordertype = subOrder.Subordertype;
+          
 
             ////////////////////////////////////////////////////////
-         // subOrder.SuborderID = order.SuborderId;
-            subOrder.SuborderQuantity = order.suborderQuantity;
-            subOrder.Subordertype = order.subordertype;
-            subOrder.OrderID = order.OrderId;
+         //// subOrder.SuborderID = order.SuborderId;
+         //   subOrder.SuborderQuantity = order.suborderQuantity;
+         //   subOrder.Subordertype = order.subordertype;
+         //   subOrder.OrderID = order.OrderId;
+         var result=mapper.Map<SubOrders>(suborder); 
              
 
 
 
-            context.SubOrders.Add(subOrder);
+            context.SubOrders.Add(result);
             context.SaveChanges();
-            return subOrder;
+            return result;
         }
 
         public List<SubOrderDTO> getall()

@@ -21,18 +21,19 @@ namespace OrderUpdate.Manager
 
         public Orders Add(OrderDTO order)
         {
-            var _order = new Orders();
+            //var _order = new Orders();
 
-            _order.ID = order.OrderID;
-            _order.OrderStatus = order.OrderStatus;
-            _order.OrderQuantity = order.OrderQuantity;
-            _order.Ordertype = order.Ordertype;
+            //_order.ID = order.OrderID;
+            //_order.OrderStatus = order.OrderStatus;
+            //_order.OrderQuantity = order.OrderQuantity;
+            //_order.Ordertype = order.Ordertype;
+
+            var result = mapper.Map<Orders>(order);
 
 
-
-            context.Orders.Add(_order);
+            context.Orders.Add(result);
             context.SaveChanges();
-            return _order;
+            return result;
         }
 
         public List<OrderDTO> getall()
