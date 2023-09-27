@@ -1,4 +1,4 @@
-﻿using OrderUpdate.DTO;
+﻿using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,10 +23,10 @@ namespace OrderUi
         {
             HttpClient client = new HttpClient();
             HttpResponseMessage respons = client.GetAsync("https://localhost:7090/api/Order/all").Result;
-            if (respons.IsSuccessStatusCode )
+            if (respons.IsSuccessStatusCode)
             {
-               var orders = respons.Content.ReadAsAsync<List<OrderDTO>>().Result;
-               // List<suborder> suborders = respons1.Content.ReadAsAsync<List<suborder>>().Result;
+                var orders = respons.Content.ReadAsAsync<List<OrderUpdate.DTO.OrderDTO>>().Result;
+                // List<suborder> suborders = respons1.Content.ReadAsAsync<List<suborder>>().Result;
 
                 // Create two separate BindingList instances
                 //var bindingListOrders = new BindingList<OrderDTO>(orders);
@@ -34,7 +34,55 @@ namespace OrderUi
 
                 // Bind each BindingList to its own DataGridView
                 ultraGrid1.DataSource = orders;
-               // dataGridView2.DataSource = bindingListSuborders;
+                // dataGridView2.DataSource = bindingListSuborders;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+            // Re-fetch the data or update the existing data source
+            HttpClient client = new HttpClient();
+            HttpResponseMessage respons = client.GetAsync("https://localhost:7090/api/Order/all").Result;
+
+            if (respons.IsSuccessStatusCode)
+            {
+                var orders = respons.Content.ReadAsAsync<List<OrderUpdate.DTO.OrderDTO>>().Result;
+
+                // Set the updated data source
+                ultraGrid1.DataSource = null;
+
+                // Set the updated data source
+                ultraGrid1.DataSource = orders;
+
+                // Force a redraw of the UltraGrid
+                ultraGrid1.Refresh();
+
+            }
+
+        }
+
+        private void ultraButton1_Click(object sender, EventArgs e)
+        {
+
+            // Re-fetch the data or update the existing data source
+            HttpClient client = new HttpClient();
+            HttpResponseMessage respons = client.GetAsync("https://localhost:7090/api/Order/all").Result;
+
+            if (respons.IsSuccessStatusCode)
+            {
+                var orders = respons.Content.ReadAsAsync<List<OrderUpdate.DTO.OrderDTO>>().Result;
+
+                // Set the updated data source
+                ultraGrid1.DataSource = null;
+
+                // Set the updated data source
+                ultraGrid1.DataSource = orders;
+
+                // Force a redraw of the UltraGrid
+                ultraGrid1.Refresh();
+
             }
         }
     }

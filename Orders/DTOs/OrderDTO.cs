@@ -30,7 +30,7 @@ namespace OrderUpdate.DTO
                     return subOrder.Sum(s => s.ExecutedQuantity);
             }
         }
-
+       
         public List<SubOrderDTO> subOrder { get; set; }
     }
 }

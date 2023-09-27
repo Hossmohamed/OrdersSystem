@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
@@ -41,6 +42,9 @@
             Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
             this.ultraGrid1 = new Infragistics.Win.UltraWinGrid.UltraGrid();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ultraButton1 = new Infragistics.Win.Misc.UltraButton();
             ((System.ComponentModel.ISupportInitialize)(this.ultraGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,11 +111,27 @@
             this.ultraGrid1.TabIndex = 0;
             this.ultraGrid1.Text = "ultraGrid1";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 6;
+            // 
+            // ultraButton1
+            // 
+            this.ultraButton1.Location = new System.Drawing.Point(599, 351);
+            this.ultraButton1.Name = "ultraButton1";
+            this.ultraButton1.Size = new System.Drawing.Size(143, 53);
+            this.ultraButton1.TabIndex = 1;
+            this.ultraButton1.Text = "refreshButton";
+            this.ultraButton1.UseWaitCursor = true;
+            this.ultraButton1.Click += new System.EventHandler(this.ultraButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ultraButton1);
             this.Controls.Add(this.ultraGrid1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -124,6 +144,9 @@
         #endregion
 
         private Infragistics.Win.UltraWinGrid.UltraGrid ultraGrid1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Timer timer1;
+        private Infragistics.Win.Misc.UltraButton ultraButton1;
     }
 }
 

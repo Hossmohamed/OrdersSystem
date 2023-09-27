@@ -33,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DTOs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DTOs\bin\Debug\netstandard2.0\DTOs.dll</HintPath>
-    </Reference>
     <Reference Include="Infragistics4.Shared.v23.1, Version=23.1.20231.6, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.Misc.v23.1, Version=23.1.20231.6, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.UltraWinGrid.v23.1, Version=23.1.20231.6, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
@@ -100,6 +96,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTOs\DTOs.csproj">
+      <Project>{1a6720f8-ac22-4ee0-83d4-88add9da3995}</Project>
+      <Name>DTOs</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
